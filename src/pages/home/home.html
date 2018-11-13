@@ -1,14 +1,76 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Don Diego
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <div class="numbers" id="numbers">
+    <h2>{{ expresion }}</h2>
+  </div>
+
+  <div class="numbers-operators">
+    <ion-row>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="7">7</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="8">8</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="9">9</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="operator" (click)="getValueButton($event)" value="DEL">DEL</button>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="4">4</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="5">5</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="6">6</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="operator" (click)="getValueButton($event)" value="/">/</button>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="1">1</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="2">2</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="3">3</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="operator" (click)="getValueButton($event)" value="*">*</button>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="number" (click)="getValueButton($event)" value="0">0</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="operator" (click)="getValueButton($event)" value=".">.</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="operator" (click)="getValueButton($event)" value="=">=</button>
+      </ion-col>
+      <ion-col class="col-sm-3 p-m-l-r">
+        <button ion-button primary full class="button-h" id="operator" (click)="getValueButton($event)" value="+">+</button>
+      </ion-col>
+    </ion-row>
+  </div>
+
 </ion-content>
